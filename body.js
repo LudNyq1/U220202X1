@@ -7,18 +7,24 @@ const fun = () => {
 
 const rowClass = ['row', 'align-items-start', 'justify-content-center'];
 
+// First
 const body = document.getElementById('body');
 body.classList.add('container');
 
 const firstRow = document.createElement('div');
 firstRow.classList.add(rowClass);
 
-const title = document.createElement('h1');
-title.classList.add('col-8', 'text-center');
+const container1 = document.createElement('div');
+container1.classList.add('col-8')
+
+const title = document.createElement('p');
+title.classList.add('text-center', 'h1', 'mx-auto');
 title.textContent = 'Body is alive';
 
 body.append(firstRow);
-firstRow.append(title);
+firstRow.append(container1);
+container1.append(title);
 
 
-setTimeout(fun, 20000);
+
+setTimeout(fun, 15000);

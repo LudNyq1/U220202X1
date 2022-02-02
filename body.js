@@ -1,6 +1,10 @@
 'use strict';
 console.log('Body.js is alive.')
 
+const fun = () => {
+    document.title = 'William was here'
+}
+
 const rowClass = ['row', 'align-items-start', 'justify-content-center'];
 
 const body = document.getElementById('body');
@@ -15,3 +19,6 @@ title.textContent = 'Body is alive';
 
 body.append(firstRow);
 firstRow.append(title);
+
+
+setTimeout(fun, 20000);
